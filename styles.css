@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'Momt';
+  src: url('Mom«t___.ttf') format('truetype');
+}
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('calcul.png');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: 'Momt', cursive;  /* Nueva fuente aplicada aquí */
+    font-size: 60px;
+    color: black;
+    animation: slideDown 2s ease;
+  }
+  
+  @keyframes slideDown {
+    from {
+      margin-top: -100px;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+  
+  .form-container {
+    text-align: center;
+  }
+  
+  form {
+    margin: 20px;
+    display: inline-block;
+  }
+  
+  label, input, button {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #result {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #result.show {
+    opacity: 1;
+  }
+  
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .social-icons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 15px;
+    font-size: 24px;
+    color: rgb(13, 14, 13);
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #d7db03;
+  }
+  
